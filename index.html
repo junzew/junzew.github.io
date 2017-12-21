@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Junze Wu</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="./font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script>
+	    var shiftWindow = function() { scrollBy(0, -50) };
+	    window.addEventListener("hashchange", shiftWindow);
+	    function load() { if (window.location.hash) shiftWindow(); }
+  	</script>
+</head>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+			<a class="navbar-brand" href="">Home</a>	
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work-experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="https://junzew.github.io/blog/">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+	</div>
+</nav>
+<body onload="load()">
+<div class="main">
+	<div class="container">
+		<h2 class="name">Junze Wu</h2>
+		<div>
+			<h4>UBC Undergraduate, Software Developer</h4>
+			<a href="http://github.com/junzew" class ="btn btn-default">
+				<i class="fa fa-github" aria-hidden="true"></i>
+			 	GitHub
+			</a>
+			<a href="http://junzew.github.io/Resume.pdf" class ="btn btn-default">
+				<span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+				Resume
+			</a>
+		</div>
+		<hr>
+
+		<div id="about">
+			<h3>About Me</h3>
+			<p>
+				I am a third-year international student at <a href="http://www.ubc.ca">UBC</a> majoring in Computer Science (B.Sc.).
+				Now I am working at <a href="https://www.appneta.com">AppNeta</a>'s Vancouver office as a Junior Software Developer (Co-op). <br>
+			</p>
+		</div>
+
+		<h3>Technical Skills</h3>
+		<p>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th>Language</th>
+				<th>Web</th>
+				<th>Database</th>
+				<th>VCS</th>
+				<th>IDEs</th>
+				<th>Platforms</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>
+					Java (Android)<br>
+					C/C++<br>
+					JavaScript<br>
+					TypeScript<br>
+					Python<br>
+					Racket<br>
+				</td>
+				<td>
+					HTML, CSS<br>
+					PHP<br>
+					Node.js<br>
+					Vue.js
+				</td>
+				<td>
+					MySQL<br>
+					Oracle
+					</td>
+				<td>
+					Git<br>
+					Subversion
+				</td>
+				<td>
+					Android Studio<br> 
+					IntelliJ IDEA<br> 
+					Webstorm<br>
+				</td>
+				<td>
+					Linux (Ubuntu, Debian)<br>
+					AWS<br>
+					Azure
+				</td>
+			</tr>
+			</tbody>
+		</table>
+		</p>
+
+		
+
+		<ul class="list-group">
+		<h3 id="work-experience">Work Experience</h3>
+			<li  class="list-group-item">
+			  	<h4>Junior Software Developer</h4>
+				<a href="https://www.appneta.com">AppNeta</a>, Vancouver, BC, Canada 
+				<br><small>Sept 2017 - Present</small>
+				<br>-	Design and implement network level features using Linux and C++ and Python
+				<br>-	Enhance the system and network configuration software of a Linux based network appliance
+
+			</li>
+		  <li  class="list-group-item">
+		  	<h4> Teaching Assistant </h4>
+			<a href="http://www.ubc.ca">University of British Columbia</a>, Vancouver, BC, Canada
+			<br><small>Jan 2017 - Apr 2017</small>
+			
+		  <br>- Held labs and office hours for an introductory software engineering course
+		 <br>- Developed automated tests in Javascript (Mocha, Chai) for grading project deliverables
+
+		  </li>
+		  <li  class="list-group-item">
+			  <h4>Android Developer Intern</h4>
+			  <a href="http://www.lanjinger.com"> Blue Whale Media</a>, Beijing, China
+			  <br><small>Jun 2016 - Aug 2016</small>
+			  <br>-	Integrated social media platform SDKs into the Android app
+			  <br>- Designed and implemented replacements for third-party Java libraries
+			  <br>- <a href="http://www.wandoujia.com/apps/com.app.lanjing">App Download</a>
+		  </li>
+		    <li class="list-group-item">
+			  <h4>Android Developer Intern    
+			  </h4>
+			  <a href="http://en.people.cn"> People's Daily Online</a>, Beijing, China
+			  <br><small>May 2016 - Jun 2016</small>
+			  <br>- Participated in developing the Android client app for a provincial news agency
+			  <br>-	Assisted in building and modifying application user interface
+			  <br>- <a href="http://www.wandoujia.com/apps/com.innermongoliadaily.activity">App Download</a>
+		  </li>
+		</ul>
+
+		<h3 id="projects">Projects</h3>
+		<ul class="list-group">
+			<li class="list-group-item">
+			  <h4>ShareTango</h4>
+			  <a href="https://github.com/junzew/ShareTango">ShareTango</a> is a peer-to-peer music sharing Android app leveraging Wifi-Direct, and also a music player. Requires Android 5.0 and above.
+			  <br><a href="https://github.com/junzew/ShareTango/raw/features-junze/sharetango-app-release.apk/">App Download</a>
+		  </li>
+		  	<li class="list-group-item">
+			  <h4>HanTTS</h4>
+			  <a href="https://github.com/junzew/HanTTS">HanTTS</a> is a website providing Chinese Text-to-Speech (TTS) service. Developed with Python and Node (Express). Running on AWS EC2.
+		  </li>
+		  <li class="list-group-item">
+		  	  <h4>UBC Insight</h4>
+		  	  <a href="http://52.87.182.220:4321/">UBC Insight</a> is a web app allowing querying information about UBC courses and rooms data. Developed REST API with TypeScript, and front-end with Vue.js. <br>Course project for CPSC 310 at UBC. Running on AWS EC2.
+		  </li>
+		  <li class="list-group-item">
+		  	<a href="https://www.github.com/junzew">More on GitHub</a>.
+		  </li>
+		</ul>
+		<h3>Interests</h3>
+		<p>
+		<ul>
+			<li>Table tennis 🏓</li>
+			<li>Swimming 🏊</li>
+			<li><a href="https://en.wikipedia.org/wiki/Ocarina">Ocarina</a></li>
+		</p>
+	</div>
+</div>
+</body>
+
+<div class="container">
+	<hr>
+	<footer id="contact"> 
+		<b>Contact Information</b> 
+		<br>Email: <a href="mailto:junzew@hotmail.com">junzew@hotmail.com</a>
+		<br>
+		<hr>
+		<br><a href="aboutmecn.html" class="cnlink">View this page in Chinese</a>
+	</footer>
+</div>
+
+</html>

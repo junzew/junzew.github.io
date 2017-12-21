@@ -1,0 +1,27 @@
+body {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.role {
+	font-style: italic;
+}
+.cnlink {
+	font-size: 12px;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+.main {
+	background-color: #fefefe
+}
