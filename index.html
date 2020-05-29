@@ -19,7 +19,9 @@
 	    var shiftWindow = function() { scrollBy(0, -50) };
 	    window.addEventListener("hashchange", shiftWindow);
 	    function load() { if (window.location.hash) shiftWindow(); }
-  	</script>
+  </script>
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<script src="scripts/tagcanvas.min.js" type="text/javascript"></script>
 </head>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -31,7 +33,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-			<a class="navbar-brand" href="">Home</a>	
+			<a class="navbar-brand" href="">Home</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -64,80 +66,159 @@
 		</div>
 		<hr>
 
-		<div id="about">
+		<div class="row">
+		<div id="about" class="col-xs-6" style="padding-right:50px">
 			<h3>About</h3>
 			<p>
-				I am a graduate student (MSc) in the <a href="https://www.cs.ubc.ca">Department of Computer Science</a> at <a href="https://www.ubc.ca">the University of British Columbia</a>.
+				I am a graduate student (MSc) in the <a href="https://www.cs.ubc.ca">Department of Computer Science</a> at <a href="https://www.ubc.ca">University of British Columbia</a> (UBC), supervised by <a href="https://www.williamjbowman.com/">William Bowman</a>.
 				<br> I have a BSc degree in Computer Science from UBC.
 			</p>
 		</div>
 
-		<h3>Interests</h3>
-		<p>
-		<ul>
-			<li>Computer Networks & Systems</li>
-			<li>Programming Languages & Compilers</li>
-			<li>Software Engineering</li>
-			<li>Graphics & Vision</li>
-		</ul>
-		</p>
+		<div id="interests" class="col-xs-6">
+			<h3>Interests</h3>
+			<p>
+			<ul>
+				<li>Programming Languages & Compilers</li>
+				<li>Software Engineering</li>
+				<li>Computer Networks & Systems</li>
+				<li>Graphics & Vision</li>
+			</ul>
+			</p>
+		</div>
+	</div>
 
+	<div class="row">
+		<div class="col-xs-6">
 		<h3>Technical Skills</h3>
-		<p>
+		<!-- <p>
 		C/C++, Python, Java (Android), JavaScript, MySQL, Linux & Shell Scripting, Git/Github, JIRA
-		</p>
+		</p> -->
+		<div id="myCanvasContainer">
+			<canvas width="300" height="300" id="myCanvas" style="align-content:center;width: 80%;height: auto;">
+				<ul>
+				 <li><a href="https://isocpp.org/">C/C++</a></li>
+				 <li><a href="https://www.python.org/">Python</a></li>
+				 <li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/index.html">Java</a></li>
+				 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+				 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+				 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+				 <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
+				 <li><a href="https://nodejs.org/en/">Node.js</a></li>
+				 <li><a href="https://www.mysql.com/">MySQL</a></li>
+				 <li><a href="https://www.kernel.org/">Linux</a></li>
+				 <li><a href="https://www.gnu.org/software/bash/">Bash</a></li>
+				 <li><a href="https://git-scm.com/">git</a></li>
+				 <li><a href="https://www.atlassian.com/software/jira">JIRA</a></li>
+				 <li><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a></li>
+				 <li><a href="https://www.eclipse.org/ide/">Eclipse</a></li>
+				 <li><a href="https://developer.android.com/studio">Android Studio</a></li>
+				 <li><a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a></li>
+				 <li><a href="https://selenium-python.readthedocs.io">Selenium</a></li>
+				 <li><a href="https://www.mathworks.com/products/matlab.html">MATLAB</a></li>
+				 <li><a href="https://www.r-project.org">R</a></li>
+				 <li><a href="https://www.r-project.org">NumPy</a></li>
+				 <li><a href="https://scikit-learn.org">Scikit-learn</a></li>
+				 <li><a href="https://matplotlib.org">Matplotlib</a></li>
+				 <li><a href="https://pandas.pydata.org">Pandas</a></li>
+				 <li><a href="https://threejs.org">three.js</a></li>
+				 <li><a href="https://www.docker.com">Docker</a></li>
+				 <li><a href="https://www.jenkins.io">Jenkins</a></li>
+				 <li><a href="https://aws.amazon.com">AWS</a></li>
+				 <li><a href="https://azure.microsoft.com">Azure</a></li>
+				</ul>
+			</canvas>
+		</div>
+	</div>
 
-		
+	<div class="col-xs-6">
+		<h3 id="projects">Projects</h3>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<h4><a href="https://github.com/junzew/HanTTS">HanTTS</a></h4>
+				 A website providing Chinese Text-to-Speech (TTS) service. Developed with Python and Node.js (Express). Deployed with Heroku. <a href="https://hantts.herokuapp.com/">https://hantts.herokuapp.com/</a>
+			</li>
+			<li class="list-group-item">
+				<h4><a href="https://github.com/junzew/ShareTango">ShareTango</a></h4>
+				A peer-to-peer music sharing Android app leveraging Wifi-Direct. Also works as a minimalistic music player. Requires Android 5.0+.
+				<a href="https://github.com/junzew/ShareTango" id="pop">
+					<img id="sharetango-img" src="images/sharetango.png" style="width:490px;"/>
+				</a>
+				<br>- <a href="https://github.com/junzew/ShareTango/releases/tag/v1.0">App Download</a>
+			</li>
+			<li class="list-group-item">
+				<a href="https://www.github.com/junzew">More on GitHub</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+
 		<ul class="list-group">
 		<h3 id="work-experience">Work Experience</h3>
+		<li  class="list-group-item">
+				<h4>Graduate Teaching Assistant</h4>
+				<img src="images/ubc-logo.png" style="width:48px;height:48px;vertical-align: top;">
+				<div id="gta" style="display:inline-block">
+					<a href="https://www.ubc.ca">University of British Columbia</a>, Vancouver, BC, Canada
+					<br><small>Sept 2019 - Present</small>
+						<p>- CPSC 310 Introduction to Software Engineering (Sep 2019 - Apr 2020, 2 terms)
+						<br>- CPSC 103 Introduction to Systematic Program Design (May - Jun 2020, 1 term)
+						<br>- CPSC 121 Models of Computation (Jul - Aug 2020, 1 term)</p>
+				<div>
+		</li>
+		<li  class="list-group-item">
+				<h4>Academic Assistant</h4>
+				<img src="images/sfu-logo.jpg" style="width:48px;height:48px;vertical-align: top;padding:5px">
+				<div id="sfu" style="display:inline-block">
+					<a href="https://www.sfu.ca">Simon Fraser University</a>, Vancouver, BC, Canada
+					<br><small>Sept 2019 - Oct 2019, Contract</small>
+						<p>- Developed automation scripts using Python and Selenium for accessing bank audit reports from the Thomson ONE database
+							<br>- <a href="https://github.com/junzew/ThomsonOneDownloader">Project code repo hosted on Github </a>
+						<br>- Remote short-term project for SFU Beedie School of Business</p>
+				<div>
+		</li>
 			<li  class="list-group-item">
 			  	<h4>Junior Software Developer</h4>
-				<a href="https://www.appneta.com">AppNeta</a>, Vancouver, BC, Canada 
-				<br><small>Sept 2017 - August 2018</small>
-				<br>-	Design and implement network level features using Linux and C++ and Python
-				<br>-	Enhance the system and network configuration software of a Linux based network appliance
+					<img src="images/appneta-logo.jpg" style="width:48px;height:48;vertical-align: top;padding:5px">
+					<div id="appneta-dev" style="display:inline-block">
+						<a href="https://www.appneta.com">AppNeta</a>, Vancouver, BC, Canada
+						<br><small>Sept 2017 - August 2018, Internship</small>
+						<br>-	Design and implement network level features using Linux and C++ and Python
+						<br>-	Enhance the system and network configuration software of a Linux based network appliance
+					</div>
 			</li>
 		  <li  class="list-group-item">
 		  	<h4> Teaching Assistant </h4>
-			<a href="http://www.ubc.ca">University of British Columbia</a>, Vancouver, BC, Canada
-			<br><small>Jan 2017 - Apr 2017</small>
-			
-		  <br>- Held labs and office hours for an introductory software engineering course
-		 <br>- Developed automated tests in Javascript (Mocha, Chai) for grading project deliverables
+				<img src="images/ubc-logo.png" style="width:48px;height:48px;vertical-align: top;">
+				<div id="uta" style="display:inline-block">
+					<a href="http://www.ubc.ca">University of British Columbia</a>, Vancouver, BC, Canada
+					<br><small>Jan 2017 - Apr 2017, Part-time</small>
 
+				  <br>- Held labs and office hours for an introductory software engineering course
+				 <br>- Developed automated tests in Javascript (Mocha, Chai) for grading project deliverables
+			 </div>
 		  </li>
 		  <li  class="list-group-item">
-			  <h4>Android Developer (Intern)</h4>
-			  <a href="http://www.lanjinger.com"> Blue Whale Media</a>, Beijing, China
-			  <br><small>Jun 2016 - Aug 2016</small>
-			  <br>-	Integrated social media platform SDKs into the Android app
-			  <br>- Designed and implemented replacements for third-party Java libraries
-			  <br>- <a href="http://www.wandoujia.com/apps/com.app.lanjing">App Download</a>
+			  <h4>Android Developer</h4>
+				<img src="images/lanjing-logo.png" style="width:48px;height:48px;vertical-align: top;">
+				<div id="lanjing" style="display:inline-block">
+				  <a href="http://www.lanjinger.com"> Blue Whale Media</a>, Beijing, China
+				  <br><small>Jun 2016 - Aug 2016, Internship</small>
+				  <br>-	Integrated social media platform SDKs into the Android app
+				  <br>- Designed and implemented replacements for third-party Java libraries
+				  <br>- <a href="http://www.wandoujia.com/apps/com.app.lanjing">App Download</a>
+				</div>
 		  </li>
 		    <li class="list-group-item">
-			  <h4>Android Developer (Intern)    
-			  </h4>
-			  <a href="http://en.people.cn"> People's Daily Online</a>, Beijing, China
-			  <br><small>May 2016 - Jun 2016</small>
-			  <br>- Participated in developing the Android client app for a provincial news agency
-			  <br>-	Assisted in building and modifying application user interface
-			  <br>- <a href="http://www.wandoujia.com/apps/com.innermongoliadaily.activity">App Download</a>
-		  </li>
-		</ul>
-
-		<h3 id="projects">Projects</h3>
-		<ul class="list-group">
-		  <li class="list-group-item">
-			  <h4>HanTTS</h4>
-			  <a href="https://github.com/junzew/HanTTS">HanTTS</a> is a website providing Chinese Text-to-Speech (TTS) service. Developed with Python and Node (Express).
-		  </li>
-		  <li class="list-group-item">
-			  <h4>ShareTango</h4>
-			  <a href="https://github.com/junzew/ShareTango">ShareTango</a> is a peer-to-peer music sharing Android app leveraging Wifi-Direct, and also a music player. Requires Android 5.0+.
-			  <br>- <a href="https://github.com/junzew/ShareTango/releases/tag/v1.0">App Download</a>
-		  </li>
-		  <li class="list-group-item">
-		  	<a href="https://www.github.com/junzew">More on GitHub</a>
+			  <h4>Android Developer</h4>
+				<img src="images/renmin-logo.png" style="width:48px;height:48px;vertical-align: top;">
+				<div id="renmin" style="display:inline-block">
+				  <a href="http://en.people.cn"> People's Daily Online</a>, Beijing, China
+				  <br><small>May 2016 - Jun 2016, Internship</small>
+				  <br>- Participated in developing the Android client app for a provincial news agency
+				  <br>-	Assisted in building and modifying application user interface
+				  <br>- <a href="http://www.wandoujia.com/apps/com.innermongoliadaily.activity">App Download</a>
+				</div>
 		  </li>
 		</ul>
 
@@ -147,8 +228,8 @@
 
 <div class="container">
 	<hr>
-	<footer id="contact"> 
-		<b>Contact Information</b> 
+	<footer id="contact">
+		<b>Contact Information</b>
 		<dl>
 			<dt>E-mail: </dt>
 				<dd>junzew at hotmail dot com</dd>
@@ -158,5 +239,18 @@
 		</dl>
 	</footer>
 </div>
+<script type="text/javascript">
+window.onload = function() {
+	try {
+		TagCanvas.textColour = '#000000';
+		TagCanvas.initial = [0.1, 0];
+		TagCanvas.outlineColour = '#52B2BF';
+		TagCanvas.Start('myCanvas');
+	} catch(e) {
+		// something went wrong, hide the canvas container
+		document.getElementById('myCanvasContainer').style.display = 'none';
+	}
+};
+</script>
 
 </html>
