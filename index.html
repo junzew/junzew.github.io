@@ -12,19 +12,17 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="aos/dist/aos.css" />
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script>
-	    var shiftWindow = function() { scrollBy(0, -50) };
-	    window.addEventListener("hashchange", shiftWindow);
-	    function load() { if (window.location.hash) shiftWindow(); }
-  </script>
+
 	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 	<script src="scripts/tagcanvas.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
 	<div class="container">
 		<div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,49 +31,104 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-			<a class="navbar-brand" href="">Home</a>
+			<!-- <a class="navbar-brand page-link" dest="#" href="#">Home</a> -->
+			<div class="navbar-brand page-link" dest="#home">Home</div>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#work-experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about" class="page-link" dest="#about">About</a></li>
+            <li><a href="#projects" class="page-link" dest="#projects">Projects</a></li>
+						<li><a href="#work-experience" class="page-link" dest="#work-experience">Experience</a></li>
             <li><a href="https://junzew.github.io/blog/">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" class="page-link" dest="#contact">Contact</a></li>
           </ul>
         </div>
 	</div>
 </nav>
-<body onload="load()">
+<section id="home">
+
+<div id="banner"></div>
+<div id="jwu">
+	<div>Hello, I'm <text class="text-highlight">Junze Wu</text>. <br>Welcome to my website.</div>
+	<div id="myCanvasContainer">
+			<canvas id="myCanvas" width="560" height="400" style="max-width: 560px; width: 100%;">
+				<p>
+				C/C++, Python, Java (Android), JavaScript, MySQL, Linux & Shell Scripting, Git/Github, JIRA
+				</p>
+				<!-- <p>If this looks like a small static image, your browser does not support the
+				canvas tag. Please try again using a different browser, or try to imagine text
+				swirling around in response to the mouse position.</p> -->
+			<ul>
+			 <li><a href="https://isocpp.org/">C/C++</a></li>
+			 <li><a href="https://www.python.org/">Python</a></li>
+			 <li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/index.html">Java</a></li>
+			 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+			 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+			 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+			 <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
+			 <li><a href="https://nodejs.org/en/">Node.js</a></li>
+			 <li><a href="https://www.mysql.com/">MySQL</a></li>
+			 <li><a href="https://www.kernel.org/">Linux</a></li>
+			 <li><a href="https://www.gnu.org/software/bash/">Bash</a></li>
+			 <li><a href="https://git-scm.com/">git</a></li>
+			 <li><a href="https://www.atlassian.com/software/jira">JIRA</a></li>
+			 <li><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a></li>
+			 <li><a href="https://www.eclipse.org/ide/">Eclipse</a></li>
+			 <li><a href="https://developer.android.com/studio">Android Studio</a></li>
+			 <li><a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a></li>
+			 <li><a href="https://selenium-python.readthedocs.io">Selenium</a></li>
+			 <li><a href="https://www.mathworks.com/products/matlab.html">MATLAB</a></li>
+			 <li><a href="https://www.r-project.org">R</a></li>
+			 <li><a href="https://www.r-project.org">NumPy</a></li>
+			 <li><a href="https://scikit-learn.org">Scikit-learn</a></li>
+			 <li><a href="https://matplotlib.org">Matplotlib</a></li>
+			 <li><a href="https://pandas.pydata.org">Pandas</a></li>
+			 <li><a href="https://threejs.org">three.js</a></li>
+			 <li><a href="https://www.docker.com">Docker</a></li>
+			 <li><a href="https://www.jenkins.io">Jenkins</a></li>
+			 <li><a href="https://aws.amazon.com">AWS</a></li>
+			 <li><a href="https://azure.microsoft.com">Azure</a></li>
+			</ul>
+		</canvas>
+	</div>
+</div>
+</section>
+<body>
+
+
 <div class="main">
 	<div class="container">
-		<h2 class="name">Junze Wu</h2>
-		<div>
-			<a href="http://github.com/junzew" class ="btn btn-default">
-				<i class="fa fa-github" aria-hidden="true"></i>
-			 	GitHub
-			</a>
-<!-- 			<a href="http://junzew.github.io/Resume.pdf" class ="btn btn-default">
-				<span class="glyphicon glyphicon-file" aria-hidden="true"></span>
-				Resume
-			</a> -->
-				<a href="https://www.linkedin.com/in/junze-wu/" class ="btn btn-default">
-				<i class="fa fa-linkedin" aria-hidden="true"></i>
-			 	LinkedIn
-			</a>
-		</div>
-		<hr>
+		<section id="about">
+		<!-- <h2>Junze Wu</h2> -->
+		<!-- <hr> -->
 
 		<div class="row">
-		<div id="about" class="col-xs-6" style="padding-right:50px">
+		<div class="col-xs-6" style="padding-right:50px">
+		<!-- <div> -->
 			<h3>About</h3>
 			<p>
 				I am a graduate student (MSc) in the <a href="https://www.cs.ubc.ca">Department of Computer Science</a> at <a href="https://www.ubc.ca">University of British Columbia</a> (UBC), supervised by <a href="https://www.williamjbowman.com/">William Bowman</a>.
 				<br> I have a BSc degree in Computer Science from UBC.
 			</p>
+			<div>
+				<a href="http://github.com/junzew" class ="btn btn-default">
+					<i class="fa fa-github" aria-hidden="true"></i>
+					GitHub
+				</a>
+	<!-- 			<a href="http://junzew.github.io/Resume.pdf" class ="btn btn-default">
+					<span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+					Resume
+				</a> -->
+					<a href="https://www.linkedin.com/in/junze-wu/" class ="btn btn-default">
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+					LinkedIn
+				</a>
+			</div>
 		</div>
 
-		<div id="interests" class="col-xs-6">
+		<div class="col-xs-6">
+		<!-- <div> -->
+			<!-- <a id="interests" class="anchor"></a> -->
 			<h3>Interests</h3>
 			<p>
 			<ul>
@@ -87,62 +140,37 @@
 			</p>
 		</div>
 	</div>
+</section>
 
-	<div class="row">
-		<div class="col-xs-6">
-		<h3>Technical Skills</h3>
-		<!-- <p>
-		C/C++, Python, Java (Android), JavaScript, MySQL, Linux & Shell Scripting, Git/Github, JIRA
-		</p> -->
-		<div id="myCanvasContainer">
-			<canvas width="300" height="300" id="myCanvas" style="align-content:center;width: 80%;height: auto;">
-				<ul>
-				 <li><a href="https://isocpp.org/">C/C++</a></li>
-				 <li><a href="https://www.python.org/">Python</a></li>
-				 <li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/index.html">Java</a></li>
-				 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
-				 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
-				 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-				 <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
-				 <li><a href="https://nodejs.org/en/">Node.js</a></li>
-				 <li><a href="https://www.mysql.com/">MySQL</a></li>
-				 <li><a href="https://www.kernel.org/">Linux</a></li>
-				 <li><a href="https://www.gnu.org/software/bash/">Bash</a></li>
-				 <li><a href="https://git-scm.com/">git</a></li>
-				 <li><a href="https://www.atlassian.com/software/jira">JIRA</a></li>
-				 <li><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a></li>
-				 <li><a href="https://www.eclipse.org/ide/">Eclipse</a></li>
-				 <li><a href="https://developer.android.com/studio">Android Studio</a></li>
-				 <li><a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a></li>
-				 <li><a href="https://selenium-python.readthedocs.io">Selenium</a></li>
-				 <li><a href="https://www.mathworks.com/products/matlab.html">MATLAB</a></li>
-				 <li><a href="https://www.r-project.org">R</a></li>
-				 <li><a href="https://www.r-project.org">NumPy</a></li>
-				 <li><a href="https://scikit-learn.org">Scikit-learn</a></li>
-				 <li><a href="https://matplotlib.org">Matplotlib</a></li>
-				 <li><a href="https://pandas.pydata.org">Pandas</a></li>
-				 <li><a href="https://threejs.org">three.js</a></li>
-				 <li><a href="https://www.docker.com">Docker</a></li>
-				 <li><a href="https://www.jenkins.io">Jenkins</a></li>
-				 <li><a href="https://aws.amazon.com">AWS</a></li>
-				 <li><a href="https://azure.microsoft.com">Azure</a></li>
-				</ul>
-			</canvas>
+
+	<!-- <div class="row"> -->
+		<!-- <div class="col-xs-6"> -->
+
+			<!-- <a id="skills" class="anchor"></a> -->
+		<!-- <h3 id="skills">Technical Skills</h3> -->
+
 		</div>
-	</div>
 
-	<div class="col-xs-6">
+
+<div class="container">
+	<!-- <div class="col-xs-6"> -->
+	<div>
+		<!-- <a id="projects" class="anchor"></a> -->
 		<h3 id="projects">Projects</h3>
 		<ul class="list-group">
 			<li class="list-group-item">
 				<h4><a href="https://github.com/junzew/HanTTS">HanTTS</a></h4>
-				 A website providing Chinese Text-to-Speech (TTS) service. Developed with Python and Node.js (Express). Deployed with Heroku. <a href="https://hantts.herokuapp.com/">https://hantts.herokuapp.com/</a>
+				 - A website providing Chinese Text-to-Speech (TTS) service
+				 <br>- Developed with Python and Node.js (Express)
+				 <br>- Deployed with Heroku <a href="https://hantts.herokuapp.com/">https://hantts.herokuapp.com/</a>
 			</li>
 			<li class="list-group-item">
 				<h4><a href="https://github.com/junzew/ShareTango">ShareTango</a></h4>
-				A peer-to-peer music sharing Android app leveraging Wifi-Direct. Also works as a minimalistic music player. Requires Android 5.0+.
+				- A peer-to-peer music sharing Android app leveraging Wifi-Direct
+				<br>- Also works as a minimalistic music player
+				<br>- Requires Android 5.0+
 				<a href="https://github.com/junzew/ShareTango" id="pop">
-					<img id="sharetango-img" src="images/sharetango.png" style="width:490px;"/>
+					<img id="sharetango-img" src="images/sharetango.png" style="width:100%;"/>
 				</a>
 				<br>- <a href="https://github.com/junzew/ShareTango/releases/tag/v1.0">App Download</a>
 			</li>
@@ -151,11 +179,14 @@
 			</li>
 		</ul>
 	</div>
-	</div>
 
-		<ul class="list-group">
-		<h3 id="work-experience">Work Experience</h3>
-		<li  class="list-group-item">
+
+
+	<h3 id="work-experience">Work Experience</h3>
+		<ul class="list-group ">
+			<!-- <a id="work-experience" class="anchor"></a> -->
+
+		<li  class="list-group-item"  data-aos="zoom-in">
 				<h4>Graduate Teaching Assistant</h4>
 				<img src="images/ubc-logo.png" style="width:48px;height:48px;vertical-align: top;">
 				<div id="gta" style="display:inline-block">
@@ -164,9 +195,9 @@
 						<p>- CPSC 310 Introduction to Software Engineering (Sep 2019 - Apr 2020, 2 terms)
 						<br>- CPSC 103 Introduction to Systematic Program Design (May - Jun 2020, 1 term)
 						<br>- CPSC 121 Models of Computation (Jul - Aug 2020, 1 term)</p>
-				<div>
+				</div>
 		</li>
-		<li  class="list-group-item">
+		<li  class="list-group-item" data-aos="zoom-in">
 				<h4>Academic Assistant</h4>
 				<img src="images/sfu-logo.jpg" style="width:48px;height:48px;vertical-align: top;padding:5px">
 				<div id="sfu" style="display:inline-block">
@@ -175,9 +206,9 @@
 						<p>- Developed automation scripts using Python and Selenium for accessing bank audit reports from the Thomson ONE database
 							<br>- <a href="https://github.com/junzew/ThomsonOneDownloader">Project code repo hosted on Github </a>
 						<br>- Remote short-term project for SFU Beedie School of Business</p>
-				<div>
+				</div>
 		</li>
-			<li  class="list-group-item">
+			<li  class="list-group-item" data-aos="zoom-in">
 			  	<h4>Junior Software Developer</h4>
 					<img src="images/appneta-logo.jpg" style="width:48px;height:48;vertical-align: top;padding:5px">
 					<div id="appneta-dev" style="display:inline-block">
@@ -187,7 +218,7 @@
 						<br>-	Enhance the system and network configuration software of a Linux based network appliance
 					</div>
 			</li>
-		  <li  class="list-group-item">
+		  <li  class="list-group-item" data-aos="zoom-in">
 		  	<h4> Teaching Assistant </h4>
 				<img src="images/ubc-logo.png" style="width:48px;height:48px;vertical-align: top;">
 				<div id="uta" style="display:inline-block">
@@ -198,7 +229,7 @@
 				 <br>- Developed automated tests in Javascript (Mocha, Chai) for grading project deliverables
 			 </div>
 		  </li>
-		  <li  class="list-group-item">
+		  <li  class="list-group-item" data-aos="zoom-in">
 			  <h4>Android Developer</h4>
 				<img src="images/lanjing-logo.png" style="width:48px;height:48px;vertical-align: top;">
 				<div id="lanjing" style="display:inline-block">
@@ -209,7 +240,7 @@
 				  <br>- <a href="http://www.wandoujia.com/apps/com.app.lanjing">App Download</a>
 				</div>
 		  </li>
-		    <li class="list-group-item">
+		    <li class="list-group-item" data-aos="zoom-in">
 			  <h4>Android Developer</h4>
 				<img src="images/renmin-logo.png" style="width:48px;height:48px;vertical-align: top;">
 				<div id="renmin" style="display:inline-block">
@@ -224,12 +255,69 @@
 
 	</div>
 </div>
+
+<script type="text/javascript">
+window.onload = function() {
+	try {
+		// TagCanvas.textColour = '#000000';
+		TagCanvas.textColour = '#99edc3';
+		TagCanvas.initial = [0.1, 0];
+		TagCanvas.outlineColour = '#1E90FF';
+		TagCanvas.Start('myCanvas');
+		splash();
+	} catch(e) {
+		// something went wrong, hide the canvas container
+		document.getElementById('myCanvasContainer').style.display = 'none';
+	}
+};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+ <script>
+	AOS.init({
+  duration: 1200,
+	// once: true
+});
+
+// EVENT HANDLERS
+  $('.page-link').click(function() {
+    var anchor = $(this).attr('dest');
+    // $('.link-wrap').removeClass('visible');
+
+    // $('nav span').removeClass('active');
+    // $('nav')
+    //   .find('[dest="' + anchor + '"]')
+    //   .addClass('active');
+
+    $('html, body').animate(
+      {
+        scrollTop: $(anchor).offset().top - 64
+      },
+      400
+    );
+  });
+
+	function splash() {
+		// $('#home').fadeOut(2000);
+		var time = 5;
+		setTimeout(function () {
+			// $('#home').hide();
+
+			$('html, body').animate(
+	      {
+	        scrollTop: $('#about').offset().top - 64
+	      },
+	     	2000
+	    );
+		}, time);
+	}
+ </script>
+
 </body>
 
 <div class="container">
 	<hr>
 	<footer id="contact">
-		<b>Contact Information</b>
+		<h3>Contact Me</h3>
 		<dl>
 			<dt>E-mail: </dt>
 				<dd>junzew at hotmail dot com</dd>
@@ -237,20 +325,12 @@
 				<dd>UBC Department of Computer Science </dd>
 				<dd>2366 Main Mall, Vancouver, BC, Canada, V6T 1Z4</dd>
 		</dl>
-	</footer>
-</div>
-<script type="text/javascript">
-window.onload = function() {
-	try {
-		TagCanvas.textColour = '#000000';
-		TagCanvas.initial = [0.1, 0];
-		TagCanvas.outlineColour = '#52B2BF';
-		TagCanvas.Start('myCanvas');
-	} catch(e) {
-		// something went wrong, hide the canvas container
-		document.getElementById('myCanvasContainer').style.display = 'none';
-	}
-};
-</script>
 
+	</footer>
+	<div class="row">
+	<iframe class="col-xs-6" style="width:50%"
+	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.802908576834!2d-123.2509980488484!3d49.261181480113486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672cbc595e6a1%3A0xab34e40e58012409!2sUBC%20Department%20of%20Computer%20Science!5e0!3m2!1sen!2sca!4v1590746787443!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	<img class="col-xs-6" src="images/icics.jpg" style="height:400px;width:332px"/>
+	</div>
+</div>
 </html>
