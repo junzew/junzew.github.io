@@ -16,9 +16,7 @@ body {
 }
 
 .theme-showcase > p > .btn {
-  margin: 5px 0;
-}
-
+  margin: 5px 0; } 
 .theme-showcase .navbar .container {
   width: auto;
 }
@@ -60,6 +58,7 @@ body {
 #myCanvas {
   /* margin-left: 10%;
   margin-right: 10%; */
+    background: url("images/skills.png") center;
 }
 
 #jwu {
@@ -68,11 +67,23 @@ body {
   /* flex-direction: column; */
   justify-content: center;
   color: #fff;
-  font-size: 32pt;
   font-family: "Raleway-semibold";
   z-index: 10;
   /* text-shadow:1px 1px 5px #bcfaca, 1px 1px 5px #fff; */
 }
+.text {
+  font-size: 32pt;
+}
 .text-highlight {
   color: #99edc3; // mint
+  font-size: 16pt;
+}
+.huge {
+    font-size: 32pt;
+}
+.medium {
+    font-size: 24pt;
+}
+.small {
+    font-size: 16pt
 }
