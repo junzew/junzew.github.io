@@ -1,0 +1,79 @@
+.role {
+	font-style: italic;
+}
+.cnlink {
+	font-size: 12px;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0; }
+.theme-showcase .container {
+  width: auto;
+}
+.main {
+	background-color: #fefefe;
+}
+
+#home {
+  height: 100vh;
+  width: 100vw;
+}
+
+#banner {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+#banner {
+  background: black;
+}
+#navbarToggler
+{
+  width: auto;
+  margin-left: 17%;
+  margin-right: 17%;
+}
+.list-group {
+  width: auto;
+  margin-left: 17%;
+  margin-right: 17%;
+}
+.para {
+    width: auto;
+    margin-right: 17%;
+    margin-left: 17%;
+}
+.text {
+  font-size: 32pt;
+}
+.text-highlight {
+  color: #99edc3; // mint
+  font-size: 16pt;
+}
+.huge {
+    font-size: 32pt;
+}
+.medium {
+    font-size: 24pt;
+}
+.small {
+    font-size: 16pt
+}
+code {
+  display: block;
+  white-space: pre-wrap
+}
+.tag{
+  height:40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
